@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #f9f9f9;
-  font-weight: 500;
+:root {
+  --primary: #75bf7a;
 }
 
 * {
@@ -14,9 +12,45 @@ body {
   text-decoration: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f9f9f9;
+  color: #9e9da2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.btn {
+  color: #fff;
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn:hover {
+  color: var(--primary);
+  background-color: transparent;
+}
+
+.btn img {
+  width: 30px;
+}
+
 .header {
   background-color: #fff;
-  padding: 30px;
+  padding: 30px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -41,6 +75,7 @@ body {
 .menu ul li a {
   color: #000;
   font: 18px;
+  font-weight: 500;
   border-width: 0 0 2px 0;
   border-style: solid;
   border-color: transparent;
@@ -48,33 +83,50 @@ body {
 }
 
 .menu ul li a:hover {
-  color: #75bf7a;
-  border-color: #75bf7a;
-}
-
-.menu-btn {
-  color: #fff;
-  background-color: #75bf7a;
-  border: 1px solid #75bf7a;
-  border-radius: 6px;
-  padding: 10px 20px;
-}
-
-.menu-btn:hover {
-  color: #75bf7a;
-  background-color: transparent;
+  color: var(--primary);
+  border-color: var(--primary);
 }
 
 .hero-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 40px;
+  gap: 40px;
 }
 
 .hero-content {
-  flex-grow: 1;
+  flex: 1;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 27px;
+}
+
+.hero-para {
+  font-size: 24px;
+  margin-bottom: 42px;
+}
+
+.hero-group-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-btn {
+  background-color: #000;
+  border-color: #000;
+}
+
+.hero-btn:hover {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
 }
 
 .hero-img {
-  flex-grow: 1;
+  flex: 1;
 }
