@@ -538,6 +538,14 @@ h6 {
     order: 2;
   }
 
+  .footer-title {
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+  }
+
   .footer-sec-boxes .hero-group-btn {
     flex-direction: column;
   }
